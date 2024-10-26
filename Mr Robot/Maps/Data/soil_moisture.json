@@ -1,0 +1,38 @@
+{
+    "Sheet1": [
+      { "State/UT": "Andhra Pradesh", "Latitude": 15.9129, "Longitude": 79.74, "Average Soil Moisture Level (m³/m³)": 0.2, "Outcomes": "Moderate" },
+      { "State/UT": "Arunachal Pradesh", "Latitude": 28.218, "Longitude": 94.7278, "Average Soil Moisture Level (m³/m³)": 0.3, "Outcomes": "High" },
+      { "State/UT": "Assam", "Latitude": 26.2006, "Longitude": 92.9376, "Average Soil Moisture Level (m³/m³)": 0.28, "Outcomes": "High" },
+      { "State/UT": "Bihar", "Latitude": 25.0961, "Longitude": 85.3131, "Average Soil Moisture Level (m³/m³)": 0.22, "Outcomes": "Moderate" },
+      { "State/UT": "Chhattisgarh", "Latitude": 21.2787, "Longitude": 81.8661, "Average Soil Moisture Level (m³/m³)": 0.25, "Outcomes": "Moderate" },
+      { "State/UT": "Goa", "Latitude": 15.2993, "Longitude": 74.124, "Average Soil Moisture Level (m³/m³)": 0.3, "Outcomes": "High" },
+      { "State/UT": "Gujarat", "Latitude": 22.2587, "Longitude": 71.1924, "Average Soil Moisture Level (m³/m³)": 0.15, "Outcomes": "Low" },
+      { "State/UT": "Haryana", "Latitude": 29.0588, "Longitude": 76.0856, "Average Soil Moisture Level (m³/m³)": 0.12, "Outcomes": "Very Low" },
+      { "State/UT": "Himachal Pradesh", "Latitude": 31.1048, "Longitude": 77.1734, "Average Soil Moisture Level (m³/m³)": 0.2, "Outcomes": "Moderate" },
+      { "State/UT": "Jammu & Kashmir", "Latitude": 33.7782, "Longitude": 76.5762, "Average Soil Moisture Level (m³/m³)": 0.18, "Outcomes": "Moderate" },
+      { "State/UT": "Jharkhand", "Latitude": 23.6102, "Longitude": 85.2799, "Average Soil Moisture Level (m³/m³)": 0.24, "Outcomes": "Moderate" },
+      { "State/UT": "Karnataka", "Latitude": 15.3173, "Longitude": 75.7139, "Average Soil Moisture Level (m³/m³)": 0.22, "Outcomes": "Moderate" },
+      { "State/UT": "Kerala", "Latitude": 10.8505, "Longitude": 76.2711, "Average Soil Moisture Level (m³/m³)": 0.32, "Outcomes": "High" },
+      { "State/UT": "Madhya Pradesh", "Latitude": 22.9734, "Longitude": 78.6569, "Average Soil Moisture Level (m³/m³)": 0.23, "Outcomes": "Moderate" },
+      { "State/UT": "Maharashtra", "Latitude": 19.6633, "Longitude": 75.3003, "Average Soil Moisture Level (m³/m³)": 0.2, "Outcomes": "Moderate" },
+      { "State/UT": "Manipur", "Latitude": 24.6637, "Longitude": 93.9063, "Average Soil Moisture Level (m³/m³)": 0.25, "Outcomes": "Moderate" },
+      { "State/UT": "Meghalaya", "Latitude": 25.467, "Longitude": 91.5822, "Average Soil Moisture Level (m³/m³)": 0.28, "Outcomes": "High" },
+      { "State/UT": "Mizoram", "Latitude": 23.1645, "Longitude": 92.9376, "Average Soil Moisture Level (m³/m³)": 0.3, "Outcomes": "High" },
+      { "State/UT": "Nagaland", "Latitude": 26.1584, "Longitude": 94.5624, "Average Soil Moisture Level (m³/m³)": 0.27, "Outcomes": "High" },
+      { "State/UT": "Odisha", "Latitude": 20.9517, "Longitude": 85.0985, "Average Soil Moisture Level (m³/m³)": 0.24, "Outcomes": "Moderate" },
+      { "State/UT": "Punjab", "Latitude": 30.7333, "Longitude": 76.7794, "Average Soil Moisture Level (m³/m³)": 0.15, "Outcomes": "Low" },
+      { "State/UT": "Rajasthan", "Latitude": 27.0238, "Longitude": 74.2176, "Average Soil Moisture Level (m³/m³)": 0.1, "Outcomes": "Very Low" },
+      { "State/UT": "Sikkim", "Latitude": 27.533, "Longitude": 88.5122, "Average Soil Moisture Level (m³/m³)": 0.29, "Outcomes": "High" },
+      { "State/UT": "Tamil Nadu", "Latitude": 11.1271, "Longitude": 78.6569, "Average Soil Moisture Level (m³/m³)": 0.21, "Outcomes": "Moderate" },
+      { "State/UT": "Telangana", "Latitude": 17.385, "Longitude": 78.4867, "Average Soil Moisture Level (m³/m³)": 0.23, "Outcomes": "Moderate" },
+      { "State/UT": "Tripura", "Latitude": 23.9408, "Longitude": 91.9882, "Average Soil Moisture Level (m³/m³)": 0.26, "Outcomes": "High" },
+      { "State/UT": "Uttar Pradesh", "Latitude": 27.1332, "Longitude": 80.4083, "Average Soil Moisture Level (m³/m³)": 0.16, "Outcomes": "Low" },
+      { "State/UT": "Uttarakhand", "Latitude": 30.0668, "Longitude": 79.0193, "Average Soil Moisture Level (m³/m³)": 0.22, "Outcomes": "Moderate" },
+      { "State/UT": "West Bengal", "Latitude": 22.9868, "Longitude": 87.855, "Average Soil Moisture Level (m³/m³)": 0.25, "Outcomes": "Moderate" },
+      { "State/UT": "Andaman & Nicobar Islands", "Latitude": 11.623, "Longitude": 92.7265, "Average Soil Moisture Level (m³/m³)": 0.31, "Outcomes": "High" },
+      { "State/UT": "Chandigarh", "Latitude": 30.7333, "Longitude": 76.7794, "Average Soil Moisture Level (m³/m³)": 0.14, "Outcomes": "Low" },
+      { "State/UT": "Dadra & Nagar Haveli", "Latitude": 20.3675, "Longitude": 73.0169, "Average Soil Moisture Level (m³/m³)": 0.13, "Outcomes": "Very Low" },
+      { "State/UT": "Daman & Diu", "Latitude": 20.3735, "Longitude": 72.8258, "Average Soil Moisture Level (m³/m³)": 0.12, "Outcomes": "Very Low" }
+    ]
+  }
+  

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- map -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="map.css">
+
+</head>
+<body>
+
+<div id="map"></div>
+<div id="choice">
+    <a class="link" href="Water_Availability.html" style="background-color: rgb(0, 255, 0);"><button>Water Availability</button></a>
+    <a class="link" href="wind_speed.html"><button>Wind Speed</button></a>
+    <a class="link" href="precipitation.html"><button>Precipitation</button></a>
+    <a class="link" href="drought.html"><button>Drought</button></a>
+    <a class="link" href="soil_moisture.html"><button>Soil Moisture</button></a>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+    const map = L.map('map').setView([20.5937, 78.9629], 5); // Centered on India
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    // Fetch data from external JSON file
+    fetch('Data/Water_Availability.json')
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(region => {
+                const lat = parseFloat(region.Latitude);
+                const lon = parseFloat(region.Longitude);
+
+                let color;
+                let radius;
+
+                // Determine color based on water availability and set a large radius
+                if (region["Water Availability(million cubic meters)"] > 20000) {
+                    color = '#35ab15'; // High water availability
+                    radius = 60000; // Large radius for high water
+                } else if (region["Water Availability(million cubic meters)"] > 15000) {
+                    color = '#3ac218'; // Moderate water availability
+                    radius = 50000; // Large radius for moderate water
+                } else if (region["Water Availability(million cubic meters)"] > 10000) {
+                    color = '#ffc714'; // Moderate water availability
+                    radius = 50000; // Large radius for moderate water
+                } else if (region["Water Availability(million cubic meters)"] > 5000) {
+                    color = '#fe9330'; // Moderate water availability
+                    radius = 50000; // Large radius for moderate water
+                } else if (region["Water Availability(million cubic meters)"] > 2000) {
+                    color = '#ce3200'; // Moderate water availability
+                    radius = 50000; // Large radius for moderate water
+                } else {
+                    color = '#992e26'; // Low water availability
+                    radius = 40000; // Large radius for low water
+                }
+
+                // Create circle covering the approximate region with a popup
+                L.circle([lat, lon], {
+                    radius: radius,
+                    fillColor: color,
+                    color: color,
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 0.6
+                })
+                .bindPopup(`<strong>${region.Region}</strong><br>${region["Key Agricultural Outputs"]}`)
+                .addTo(map);
+            });
+        })
+        .catch(error => console.error('Error loading data:', error));
+</script>
+
+</body>
+</html>

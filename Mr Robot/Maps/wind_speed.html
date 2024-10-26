@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wind Speed Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="map.css">
+</head>
+<body>
+
+
+<div id="map"></div>
+<div id="choice">
+    <a class="link" href="Water_Availability.html"><button>Water Availability</button></a>
+    <a class="link" href="wind_speed.html" style="background-color: rgb(0, 255, 0);"><button>Wind Speed</button></a>
+    <a class="link" href="precipitation.html"><button>Precipitation</button></a>
+    <a class="link" href="drought.html"><button>Drought</button></a>
+    <a class="link" href="soil_moisture.html"><button>Soil Moisture</button></a>
+</div>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+    const map = L.map('map').setView([20.5937, 78.9629], 5); // Centered on India
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    fetch('Data/wind_speed.json')
+        .then(response => response.json())
+        .then(data => {
+            data.Sheet1.forEach(state => {
+                const lat = parseFloat(state.Latitude);
+                const lon = parseFloat(state.Longitude);
+                
+                let color;
+                let radius;
+
+                // Determine color based on wind speed and set a large radius
+                if (state["Wind Speed (km/h)"] > 18) {
+                    color = 'green'; // High wind speed
+                    radius = 30000; // Large radius for high wind speed
+                } else if (state["Wind Speed (km/h)"] > 12) {
+                    color = 'orange'; // Moderate wind speed
+                    radius = 25000; // Large radius for moderate wind speed
+                } else {
+                    color = 'red'; // Low wind speed
+                    radius = 20000; // Large radius for low wind speed
+                }
+
+                // Create circle covering the approximate region with a popup
+                L.circle([lat, lon], {
+                    radius: radius,
+                    fillColor: color,
+                    color: color,
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 0.6
+                })
+                .bindPopup(`<strong>${state["State/UT"]}</strong><br>Wind Speed: ${state["Wind Speed (km/h)"]} km/h`)
+                .addTo(map);
+            });
+        })
+        .catch(error => console.error('Error loading data:', error));
+</script>
+
+</body>
+</html>

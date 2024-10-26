@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Moisture Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="map.css">
+</head>
+<body>
+    
+    <div id="map"></div>
+    <div id="choice">
+        <a class="link" href="Water_Availability.html"><button>Water Availability</button></a>
+        <a class="link" href="wind_speed.html"><button>Wind Speed</button></a>
+        <a class="link" href="precipitation.html"><button>Precipitation</button></a>
+        <a class="link" href="drought.html"><button>Drought</button></a>
+        <a class="link" style="background-color: rgb(0, 255, 0);" href="soil_moisture.html"><button>Soil Moisture</button></a>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map
+        const map = L.map('map').setView([20.5937, 78.9629], 5); // Center on India
+
+        // Add a tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Fetch the soil moisture data
+        fetch('Data/soil_moisture.json')
+            .then(response => response.json())
+            .then(data => {
+                data.Sheet1.forEach(location => {
+                    const { State: state, Latitude: lat, Longitude: lon, 'Average Soil Moisture Level (m³/m³)': moistureLevel, Outcomes: outcome } = location;
+
+                    // Set marker color based on outcomes
+                    let color;
+                    switch (outcome) {
+                        case "High":
+                            color = "green";
+                            break;
+                        case "Moderate":
+                            color = "orange";
+                            break;
+                        case "Low":
+                            color = "red";
+                            break;
+                        case "Very Low":
+                            color = "darkred";
+                            break;
+                    }
+
+                    // Add a marker for each state
+                    L.circleMarker([lat, lon], {
+                        radius: 8,
+                        fillColor: color,
+                        color: color,
+                        weight: 1,
+                        opacity: 1,
+                        fillOpacity: 0.5
+                    }).addTo(map)
+                    .bindPopup(`<strong>${state}</strong><br>Average Soil Moisture Level: ${moistureLevel}<br>Outcomes: ${outcome}`);
+                });
+            })
+            .catch(error => console.error('Error loading the soil moisture data:', error));
+    </script>
+</body>
+</html>

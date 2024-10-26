@@ -1,0 +1,212 @@
+[
+    {
+     "Region": "Punjab",
+     "Latitude": "30.9009° N",
+     "Longitude": "75.8573° E",
+     "Water Availability(million cubic meters)": 38000,
+     "Key Agricultural Outputs": "Major producer of wheat and rice"
+    },
+    {
+     "Region": "Haryana",
+     "Latitude": "29.0588° N",
+     "Longitude": "76.0856° E",
+     "Water Availability(million cubic meters)": 15000,
+     "Key Agricultural Outputs": "Significant wheat and mustard production"
+    },
+    {
+     "Region": "Uttar Pradesh",
+     "Latitude": "27.4979° N",
+     "Longitude": "81.5639° E",
+     "Water Availability(million cubic meters)": 20000,
+     "Key Agricultural Outputs": "Diverse crops including sugarcane and rice"
+    },
+    {
+     "Region": "Maharashtra",
+     "Latitude": "19.6633° N",
+     "Longitude": "75.3003° E",
+     "Water Availability(million cubic meters)": 25000,
+     "Key Agricultural Outputs": "Cotton, soybeans, and sugarcane"
+    },
+    {
+     "Region": "Tamil Nadu",
+     "Latitude": "11.1271° N",
+     "Longitude": "78.6569° E",
+     "Water Availability(million cubic meters)": 24864,
+     "Key Agricultural Outputs": "Rice, sugarcane, and horticultural crops"
+    },
+    {
+     "Region": "Rajasthan",
+     "Latitude": "27.0238° N",
+     "Longitude": "74.2176° E",
+     "Water Availability(million cubic meters)": 10000,
+     "Key Agricultural Outputs": "Pulses, oilseeds, and coarse cereals"
+    },
+    {
+     "Region": "Andhra Pradesh",
+     "Latitude": "15.9129° N",
+     "Longitude": "79.7400° E",
+     "Water Availability(million cubic meters)": 15500,
+     "Key Agricultural Outputs": "Rice and groundnuts"
+    },
+    {
+     "Region": "Gujarat",
+     "Latitude": "22.2587° N",
+     "Longitude": "71.1924° E",
+     "Water Availability(million cubic meters)": 20000,
+     "Key Agricultural Outputs": "Cotton and groundnuts"
+    },
+    {
+     "Region": "West Bengal",
+     "Latitude": "22.9868° N",
+     "Longitude": "87.8550° E",
+     "Water Availability(million cubic meters)": 18000,
+     "Key Agricultural Outputs": "Rice and jute"
+    },
+    {
+     "Region": "Bihar",
+     "Latitude": "25.0961° N",
+     "Longitude": "85.3131° E",
+     "Water Availability(million cubic meters)": 12500,
+     "Key Agricultural Outputs": "Rice and wheat"
+    },
+    {
+     "Region": "Odisha",
+     "Latitude": "20.9517° N",
+     "Longitude": "85.0985° E",
+     "Water Availability(million cubic meters)": 16690,
+     "Key Agricultural Outputs": "Paddy (rice), pulses"
+    },
+    {
+     "Region": "Assam",
+     "Latitude": "26.2006° N",
+     "Longitude": "92.9376° E",
+     "Water Availability(million cubic meters)": 30000,
+     "Key Agricultural Outputs": "Rice and tea"
+    },
+    {
+     "Region": "Himachal Pradesh",
+     "Latitude": "31.1048° N",
+     "Longitude": "77.1734° E",
+     "Water Availability(million cubic meters)": 5500,
+     "Key Agricultural Outputs": "Apples, maize"
+    },
+    {
+     "Region": "Jammu & Kashmir",
+     "Latitude": "33.7782° N",
+     "Longitude": "76.5762° E",
+     "Water Availability(million cubic meters)": 10000,
+     "Key Agricultural Outputs": "Rice, saffron"
+    },
+    {
+     "Region": "Uttarakhand",
+     "Latitude": "30.0668° N",
+     "Longitude": "79.0193° E",
+     "Water Availability(million cubic meters)": 7500,
+     "Key Agricultural Outputs": "Rice and fruits"
+    },
+    {
+     "Region": "Meghalaya",
+     "Latitude": "25.4670° N",
+     "Longitude": "91.5822 °E",
+     "Water Availability(million cubic meters)": 10000,
+     "Key Agricultural Outputs": "Rice and oranges"
+    },
+    {
+     "Region": "Manipur",
+     "Latitude": "24.6637 °N",
+     "Longitude": "93.9250 °E",
+     "Water Availability(million cubic meters)": 5500,
+     "Key Agricultural Outputs": "Rice and vegetables"
+    },
+    {
+     "Region": "Mizoram",
+     "Latitude": "23.1645 °N",
+     "Longitude": "92.9376 °E",
+     "Water Availability(million cubic meters)": 3500,
+     "Key Agricultural Outputs": "Rice and bamboo"
+    },
+    {
+     "Region": "Nagaland",
+     "Latitude": "26.1584 °N",
+     "Longitude": "94.5624 °E",
+     "Water Availability(million cubic meters)": 4500,
+     "Key Agricultural Outputs": "Rice and millet"
+    },
+    {
+     "Region": "Arunachal Pradesh",
+     "Latitude": "28.2180 °N",
+     "Longitude": "94.7270 °E",
+     "Water Availability(million cubic meters)": 6000,
+     "Key Agricultural Outputs": "Rice and maize"
+    },
+    {
+     "Region": "Tripura",
+     "Latitude": "23.7130 °N",
+     "Longitude": "91.2824 °E",
+     "Water Availability(million cubic meters)": 5500,
+     "Key Agricultural Outputs": "Rice , tea , rubber"
+    },
+    {
+     "Region": "Sikkim",
+     "Latitude": "27.5330 °N",
+     "Longitude": "88.6139 °E",
+     "Water Availability(million cubic meters)": 3200,
+     "Key Agricultural Outputs": "Rice , maize , ginger"
+    },
+    {
+     "Region": "Goa",
+     "Latitude": "15.2993 °N",
+     "Longitude": "74.1240 °E",
+     "Water Availability(million cubic meters)": 1800,
+     "Key Agricultural Outputs": "Rice , cashew nuts"
+    },
+    {
+     "Region": "Lakshadweep Islands",
+     "Latitude": "10.5720 °N",
+     "Longitude": "72.6385 °E",
+     "Water Availability(million cubic meters)": 5500,
+     "Key Agricultural Outputs": "Coconut , fish"
+    },
+    {
+     "Region": "Andaman & Nicobar Islands",
+     "Latitude": "11.6234 °N",
+     "Longitude": "92.7265 °E",
+     "Water Availability(million cubic meters)": 5500,
+     "Key Agricultural Outputs": "Coconut , spices"
+    },
+    {
+     "Region": "Puducherry",
+     "Latitude": "11.9416 °N",
+     "Longitude": "79.8083 °E",
+     "Water Availability(million cubic meters)": 1500,
+     "Key Agricultural Outputs": "Rice , vegetables"
+    },
+    {
+     "Region": "Daman & Diu",
+     "Latitude": "20.3970 °N",
+     "Longitude": "72.8337 °E",
+     "Water Availability(million cubic meters)": 1200,
+     "Key Agricultural Outputs": "Rice , vegetables"
+    },
+    {
+     "Region": "Dadra & Nagar Haveli",
+     "Latitude": "20.2740 °N",
+     "Longitude": "73.7465 °E",
+     "Water Availability(million cubic meters)": 1400,
+     "Key Agricultural Outputs": "Rice , cashew nuts"
+    },
+    {
+     "Region": "Telangana",
+     "Latitude": "17.3850 °N",
+     "Longitude": "78.4867 °E",
+     "Water Availability(million cubic meters)": 17000,
+     "Key Agricultural Outputs": "Rice , cotton"
+    },
+    {
+     "Region": "Chhattisgarh",
+     "Latitude": "21.2787 °N",
+     "Longitude": "81.8661 °E",
+     "Water Availability(million cubic meters)": 10000,
+     "Key Agricultural Outputs": "Rice , pulses"
+    }
+   ]

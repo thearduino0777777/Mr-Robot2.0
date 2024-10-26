@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url(background.jpg);
+
+}
+#map {
+    margin: 30px;
+    width: 90vw;
+    height: 90vh;
+    border-radius: 20px;
+    box-shadow: 0 0px 20px 11px rgb(97 142 147 / 60%);
+    position: relative;
+    z-index: 1;
+}
+#choice{
+    display: flex;
+    position: relative;
+    z-index: 2;
+    top: 179px;
+    right: 20px;
+    flex-direction:column;
+    border: none;
+    height: 283px;
+    border-radius: 20px;
+    background-color: none;
+}
+.link{
+    padding: 20px 0px;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: transparent;
+    margin: 20px;
+    justify-content:center;
+    cursor: pointer;
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.link:hover{
+    background-color: rgb(18, 219, 0);
+    cursor: pointer;
+}
+.link{
+    text-decoration: none;
+}

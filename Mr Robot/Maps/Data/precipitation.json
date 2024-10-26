@@ -1,0 +1,256 @@
+{
+    "Sheet1":[
+     {
+      "State\/UT": "Andhra Pradesh",
+      "Latitude": "15.9129° N",
+      "Longitude": "79.7400° E",
+      "Average Annual Precipitation (mm)": 900,
+      "Outcomes": "Moderate rainfall"
+     },
+     {
+      "State\/UT": "Arunachal Pradesh",
+      "Latitude": "28.2180° N",
+      "Longitude": "94.7278° E",
+      "Average Annual Precipitation (mm)": 3000,
+      "Outcomes": "High rainfall"
+     },
+     {
+      "State\/UT": "Assam",
+      "Latitude": "26.2006° N",
+      "Longitude": "92.9376° E",
+      "Average Annual Precipitation (mm)": 2500,
+      "Outcomes": "High rainfall"
+     },
+     {
+      "State\/UT": "Bihar",
+      "Latitude": "25.0961° N",
+      "Longitude": "85.3131° E",
+      "Average Annual Precipitation (mm)": 1100,
+      "Outcomes": "Moderate rainfall"
+     },
+     {
+      "State\/UT": "Chhattisgarh",
+      "Latitude": "21.2787° N",
+      "Longitude": "81.8661° E",
+      "Average Annual Precipitation (mm)": 1300,
+      "Outcomes": "Moderate rainfall"
+     },
+     {
+      "State\/UT": "Goa",
+      "Latitude": "15.2993° N",
+      "Longitude": "74.1240° E",
+      "Average Annual Precipitation (mm)": 3000,
+      "Outcomes": "High rainfall"
+     },
+     {
+      "State\/UT": "Gujarat",
+      "Latitude": "22.2587° N",
+      "Longitude": "71.1924° E",
+      "Average Annual Precipitation (mm)": 800,
+      "Outcomes": "Low rainfall"
+     },
+     {
+      "State\/UT": "Haryana",
+      "Latitude": "29.0588° N",
+      "Longitude": "76.0856° E",
+      "Average Annual Precipitation (mm)": 600,
+      "Outcomes": "Low rainfall"
+     },
+     {
+      "State\/UT": "Himachal Pradesh",
+      "Latitude": "31.1048° N",
+      "Longitude": "77.1734° E",
+      "Average Annual Precipitation (mm)": 1500,
+      "Outcomes": "Moderate rainfall"
+     },
+     {
+      "State\/UT": "Jammu & Kashmir",
+      "Latitude": "33.7782° N",
+      "Longitude": "76.5762° E",
+      "Average Annual Precipitation (mm)": 1000,
+      "Outcomes": "Moderate rainfall"
+     },
+     {
+      "State\/UT": "Jharkhand",
+      "Latitude": "23.6102° N",
+      "Longitude": "85.2799° E",
+      "Average Annual Precipitation (mm)": 1200,
+      "Outcomes": "Moderate rainfall"
+     },
+     {
+      "State\/UT": "Karnataka",
+      "Latitude": "15.3173° N",
+      "Longitude": "75.7139° E",
+      "Average Annual Precipitation (mm)": 1200,
+      "Outcomes": "Moderate rainfall"
+     },
+     {
+      "State\/UT": "Kerala",
+      "Latitude": "10.8505° N",
+      "Longitude": "76.2711° E",
+      "Average Annual Precipitation (mm)": 3000,
+      "Outcomes": "High rainfall"
+     },
+     {
+      "State\/UT": "Madhya Pradesh",
+      "Latitude": "22.9734° N",
+      "Longitude": "78.6569° E",
+      "Average Annual Precipitation (mm)": 1000,
+      "Outcomes": "Moderate rainfall"
+     },
+     {
+      "State\/UT": "Maharashtra",
+      "Latitude": "19.6633° N",
+      "Longitude": "75.3003 °E",
+      "Average Annual Precipitation (mm)": 1200,
+      "Outcomes": "Moderate rainfall"
+     },
+     {
+      "State\/UT": "Manipur",
+      "Latitude": "24 .6637 °N",
+      "Longitude": "93 .9063 °E",
+      "Average Annual Precipitation (mm)": 1500,
+      "Outcomes": "Moderate rainfall"
+     },
+     {
+      "State\/UT": "Meghalaya",
+      "Latitude": "25.4670° N",
+      "Longitude": "91.5822 °E",
+      "Average Annual Precipitation (mm)": 3000,
+      "Outcomes": "High rainfall"
+     },
+     {
+      "State\/UT": "Mizoram",
+      "Latitude": "23 .1645 °N",
+      "Longitude": "92.9376 °E",
+      "Average Annual Precipitation (mm)": 2500,
+      "Outcomes": "High rainfall"
+     },
+     {
+      "State\/UT": "Nagaland",
+      "Latitude": "26.1584 °N",
+      "Longitude": "94.5624 °E",
+      "Average Annual Precipitation (mm)": 2500,
+      "Outcomes": "High rainfall"
+     },
+     {
+      "State\/UT": "Odisha",
+      "Latitude": "20.9517 °N",
+      "Longitude": "85.0985 °E",
+      "Average Annual Precipitation (mm)": 1400,
+      "Outcomes": "Moderate rainfall"
+     },
+     {
+      "State\/UT": "Punjab",
+      "Latitude": "30.7333 °N",
+      "Longitude": "76.7794 °E",
+      "Average Annual Precipitation (mm)": 700,
+      "Outcomes": "Low rainfall"
+     },
+     {
+      "State\/UT": "Rajasthan",
+      "Latitude": "27.0238 °N",
+      "Longitude": "74.2176 °E",
+      "Average Annual Precipitation (mm)": 500,
+      "Outcomes": "Very low rainfall"
+     },
+     {
+      "State\/UT": "Sikkim",
+      "Latitude": "27.5330 °N",
+      "Longitude": "88.5122 °E",
+      "Average Annual Precipitation (mm)": 2000,
+      "Outcomes": "High rainfall"
+     },
+     {
+      "State\/UT": "Tamil Nadu",
+      "Latitude": "11.1271 °N",
+      "Longitude": "78.6569 °E",
+      "Average Annual Precipitation (mm)": 900,
+      "Outcomes": "Moderate rainfall"
+     },
+     {
+      "State\/UT": "Telangana",
+      "Latitude": "17.3850 °N",
+      "Longitude": "78.4867 °E",
+      "Average Annual Precipitation (mm)": 1000,
+      "Outcomes": "Moderate rainfall"
+     },
+     {
+      "State\/UT": "Tripura",
+      "Latitude": "23.9408 °N",
+      "Longitude": "91.9882 °E",
+      "Average Annual Precipitation (mm)": 2000,
+      "Outcomes": "High rainfall"
+     },
+     {
+      "State\/UT": "Uttar Pradesh",
+      "Latitude": "27.1332 °N",
+      "Longitude": "80.4083 °E",
+      "Average Annual Precipitation (mm)": 800,
+      "Outcomes": "Low rainfall"
+     },
+     {
+      "State\/UT": "Uttarakhand",
+      "Latitude": "30.0668 °N",
+      "Longitude": "79.0193 °E",
+      "Average Annual Precipitation (mm)": 1200,
+      "Outcomes": "Moderate rainfall"
+     },
+     {
+      "State\/UT": "West Bengal",
+      "Latitude": "22.9868 °N",
+      "Longitude": "87.8550 °E",
+      "Average Annual Precipitation (mm)": 1500,
+      "Outcomes": "Moderate rainfall"
+     },
+     {
+      "State\/UT": "Andaman & Nicobar Islands",
+      "Latitude": "11.6230 °N",
+      "Longitude": "92.7265 °E",
+      "Average Annual Precipitation (mm)": 2500,
+      "Outcomes": "High rainfall"
+     },
+     {
+      "State\/UT": "Chandigarh",
+      "Latitude": "30.7333 °N",
+      "Longitude": "76.7794 °E",
+      "Average Annual Precipitation (mm)": 700,
+      "Outcomes": "Low rainfall"
+     },
+     {
+      "State\/UT": "Dadra & Nagar Haveli",
+      "Latitude": "20.3675 °N",
+      "Longitude": "73.0169 °E",
+      "Average Annual Precipitation (mm)": 800,
+      "Outcomes": "Low rainfall"
+     },
+     {
+      "State\/UT": "Daman & Diu",
+      "Latitude": "20.3735 °N",
+      "Longitude": "72.8258 °E",
+      "Average Annual Precipitation (mm)": 600,
+      "Outcomes": "Low rainfall"
+     },
+     {
+      "State\/UT": "Delhi",
+      "Latitude": "28.6139 °N",
+      "Longitude": "77.2090 °E",
+      "Average Annual Precipitation (mm)": 700,
+      "Outcomes": "Low rainfall"
+     },
+     {
+      "State\/UT": "Ladakh",
+      "Latitude": "34.1526 °N",
+      "Longitude": "77.5789 °E",
+      "Average Annual Precipitation (mm)": 400,
+      "Outcomes": "Very low"
+     },
+     {
+      "State\/UT": "Lakshadweep",
+      "Latitude": "10.5720 °N",
+      "Longitude": "72.6417 °E",
+      "Average Annual Precipitation (mm)": 1300,
+      "Outcomes": "Very low"
+     }
+    ]
+    }

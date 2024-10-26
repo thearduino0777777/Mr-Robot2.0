@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drought Data Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="map.css">
+</head>
+<body>
+
+<div id="map"></div>
+<div id="choice">
+    <a class="link" href="Water_Availability.html"><button>Water Availability</button></a>
+    <a class="link" href="wind_speed.html"><button>Wind Speed</button></a>
+    <a class="link" href="precipitation.html"><button>Precipitation</button></a>
+    <a class="link"  style="background-color: rgb(0, 255, 0);" href="drought.html"><button>Drought</button></a>
+    <a class="link" href="soil_moisture.html"><button>Soil Moisture</button></a>
+</div>
+
+<script>
+    // Initialize the map and set its view to India
+    var map = L.map('map').setView([20.5937, 78.9629], 5);
+
+    // Add a tile layer to the map
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Function to determine marker color based on drought index
+    function getColor(index) {
+        if (index <= -1) return "red";        // Severe drought
+        else if (index < 0) return "orange";   // Moderate drought
+        else return "green";                   // Normal
+    }
+
+    // Fetch the external JSON data
+    fetch('Data/drought.json')
+        .then(response => response.json())
+        .then(data => {
+            // Add markers to the map
+            data.drought_data.forEach(function(drought) {
+                var marker = L.circleMarker([drought.lat, drought.lon], {
+                    color: getColor(drought.index),
+                    radius: 8,
+                    fillOpacity: 0.6
+                }).addTo(map);
+
+                // Add a popup for each marker
+                marker.bindPopup("<b>" + drought.state + "</b><br>Drought Index: " + drought.index + "<br>Outcome: " + drought.outcome);
+            });
+        })
+        .catch(error => console.error('Error fetching the drought data:', error));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian States - Average Annual Precipitation</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="map.css">
+</head>
+<body>
+<div id="map"></div>
+<div id="choice">
+    <a class="link" href="Water_Availability.html"><button>Water Availability</button></a>
+    <a class="link" href="wind_speed.html"><button>Wind Speed</button></a>
+    <a class="link" style="background-color: rgb(0, 255, 0);" href="precipitation.html"><button>Precipitation</button></a>
+    <a class="link" href="drought.html"><button>Drought</button></a>
+    <a class="link" href="soil_moisture.html"><button>Soil Moisture</button></a>
+</div>
+<script>
+    // Initialize the map centered around India
+    const map = L.map('map').setView([20.5937, 78.9629], 5);
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Define color function based on precipitation level
+    function getColor(precipitation) {
+        return precipitation >= 2500 ? '#005f73' :
+               precipitation >= 2000 ? '#0a9396' :
+               precipitation >= 1500 ? '#94d2bd' :
+               precipitation >= 1000 ? '#e9d8a6' :
+               precipitation >= 500  ? '#ee9b00' :
+                                       '#ae2012';
+    }
+
+    // Load precipitation data
+    fetch('Data/precipitation.json')
+        .then(response => response.json())
+        .then(data => {
+            data.Sheet1.forEach(state => {
+                const lat = parseFloat(state.Latitude);
+                const lng = parseFloat(state.Longitude);
+                const precipitation = state["Average Annual Precipitation (mm)"];
+                const outcome = state.Outcomes;
+
+                // Create a circle marker for each state
+                L.circleMarker([lat, lng], {
+                    color: getColor(precipitation),
+                    radius: 8,
+                    fillOpacity: 0.7,
+                })
+                .bindPopup(`<strong>${state["State/UT"]}</strong><br>Precipitation: ${precipitation} mm<br>Outcome: ${outcome}`)
+                .addTo(map);
+            });
+        })
+        .catch(error => console.error('Error loading data:', error));
+</script>
+
+</body>
+</html>
